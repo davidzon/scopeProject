@@ -18,7 +18,19 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 ***********************************************************************/
 
-// Your code here 
+// Your code here
+const arrowMyMap = (array, callback) => {
+const newArr = [];
+  array.forEach(el => {
+      newArr.push(callback(el));
+  });
+
+  return newArr;
+}
+
+let result1 = arrowMyMap([100, 25, 81, 64], Math.sqrt);
+console.log(result1);   // [ 10, 5, 9, 8 ]
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
