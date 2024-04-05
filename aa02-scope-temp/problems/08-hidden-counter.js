@@ -15,10 +15,21 @@ hidden2(); // returns 1
 
 ***********************************************************************/
 
-// Your code here 
+// Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
+let hiddenCounter = () => {
+  let counter = 0;
+  return function() {
+    counter++;
+    return counter;
 
+  }
+
+}
+let hidden1 = hiddenCounter()
+
+console.log(hidden1);
 try {
   module.exports = hiddenCounter;
 } catch (e) {
